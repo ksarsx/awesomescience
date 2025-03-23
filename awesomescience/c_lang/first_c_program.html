@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="article.css" />
+    <title>First C program</title>
+  </head>
+
+  <body>
+    <header>
+      <span class="subtitle">Awesome Science</span>
+      <h1 class="theme">Первая программа на Си</h1>
+    </header>
+    <main>
+      <article>
+        <br />
+        <div>
+          <span
+            >Со средой разработки мы разобрались, поэтому можем приступать к
+            нашей первой программе на Си.</span
+          >
+        </div>
+        <br />
+        <div>
+          <span
+            >Давай сразу напишем наш <strong>Hello world</strong> и разберем
+            далее, что тут написано. Не стоит пугаться, если большинство вещей
+            здесь тебе не понятны, они будут разобраны далее в следующих
+            статьях.</span
+          ><br /><br />
+
+          <div class="code-head">
+            C
+            <pre><code class="c-lang">#include &ltstdio.h>
+
+int main() {
+    printf("Hello world");                        
+    return 0;
+}</code></pre>
+          </div>
+          <br />
+          <span
+            ><span class="code-detail">#include &ltstdio.h></span>:
+            <strong>#include</strong> - это директива препроцессора(здесь грубо
+            говоря она вставляет код нашей библиотеки, которую мы указали).
+            <strong>stdio.h</strong> - это стандартная библиотека ввода-вывода,
+            в которой как раз и содержится наша функция <strong>printf</strong>.
+          </span>
+          <br />
+          <br />
+          <span
+            ><span class="code-detail">int main() {}</span>: эта функция по сути
+            является стартом нашей программы. То, что находится в фигурных
+            скобках называется телом функции. На данный момент, можно думать
+            так: мы видим результат команд, которые мы пишем в теле main. Также
+            мы видим, что перед названием функции("main") стоит "int", это тип
+            значния, которое вернет функция, на данном этапе можно не вникать в
+            это, типы данных и функции будут разобраны в следующих статьях.
+          </span>
+          <br /><br />
+          <span
+            ><span class="code-detail">printf("Hello world")</span>: начнем с
+            того, что "Hello world" - это строка, как таковые строки в си не
+            реализованы, и по сути это просто массив символов(char). Мы сразу
+            передаем её в функцию <strong>printf( )</strong>. printf выводит нам
+            в командную строку текст, который мы ей передали.</span
+          >
+          <br /><br />
+          <span
+            ><span class="code-detail">return 0;</span>: эта команда, возвращает
+            0, если программа вернула 0, то это значит, что она завершила свою
+            работу без ошибок.</span
+          >
+          <br />
+          <img src="pictures/img12.png" alt="image" />
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

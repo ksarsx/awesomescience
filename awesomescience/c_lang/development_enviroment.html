@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>enviroment с</title>
+    <link rel="stylesheet" href="article.css" />
+  </head>
+
+  <body>
+    <header>
+      <span class="subtitle">Awesome Science</span>
+      <h1 class="theme">Среды разработки для Си</h1>
+    </header>
+
+    <main>
+      <article>
+        <br /><br />
+        <div>
+          <span
+            >И так, чтобы удобно прогать на Си, нужно обзавестись средой
+            разработки. Статья пока что неполная, в дальнейшем будет
+            отредактирована.</span
+          >
+        </div>
+        <h3>Windows</h3>
+        <div>
+          <span
+            >В случае с windows, очевидным решением будет
+            <a href="https://visualstudio.microsoft.com/" target="_blank"
+              >Visual Studio</a
+            >
+            (не code). Community версии будет предостаточно (она
+            бесплатна).</span
+          ><br /><br />
+          <h4>Установка</h4>
+          <span
+            >Далее поэтапно покажу как скачать то, что надо для разработки на Си
+            (также сможете и на C++ соответственно).</span
+          ><br /><br />
+          <span
+            >1. На сайте
+            <a href="https://visualstudio.microsoft.com" target="_blank"
+              >https://visualstudio.microsoft.com</a
+            >
+            скачиваем community версию:</span
+          ><br />
+          <img src="pictures\img1.png" alt="image" />
+          <br />
+          <span
+            >2. После подготовки установщика, возникнет окошко с выбором того,
+            что устанавливать, не стресуем и ставим галочку у следующего окошка:
+          </span>
+          <br />
+          <img src="pictures/img2.png" alt="image" />
+          <br />
+          <span
+            >3. Дальше после установки создаем проект, нажимаем на плитку
+            <strong>Create a new project</strong> (создать новый проект, если у
+            вас визуалка на русском настроена):</span
+          >
+          <br />
+          <img src="pictures/img3.png" alt="image" /><br />
+          <span>4. Находим вариант с пустым C++ проектом и выбираем его: </span
+          ><br />
+          <img src="pictures/img4.png" alt="image" /><br />
+          <span
+            >5. Выбираем расположение проекта и жмем на кнопку
+            <strong>Create</strong> (Создать): </span
+          ><br />
+          <img src="pictures/img5.png" alt="image" /> <br />
+          <span
+            >6. Открывается наше окошко с проектом, дело за малым, в
+            <strong>Solution Explorer</strong> находим
+            <strong>Resourse Files</strong> кликаем туда правой кнопкой мыши,
+            наводим на <strong>Add</strong> (добавить) и выбираем
+            <strong>New Item</strong>:</span
+          ><br />
+          <img src="pictures/img6.png" alt="image" /> <br />
+          <span
+            >7. Появляется окошко Add New Item, в нем просто меняем (можем не
+            менять) название файла и (это уже надо менять) расширение файла на
+            <strong>.c</strong>:</span
+          ><br />
+          <img src="pictures/img7.png" alt="image" /><br />
+          <span
+            >8. Поскольку работать с консольным вводом и выводом нам так сразу
+            не дадут, надо еще кое-что сделать с проектом, жмем на на кнопку
+            <strong>Project</strong> сверху и в менюшке выбираем
+            <strong>Properties</strong>:</span
+          ><br />
+          <img src="pictures/img8.png" alt="image" /><br />
+          <span
+            >9. Так дальше в менюшке окошка находим <strong>C/C++</strong>,
+            жмакаем и там же находим <strong>Preprocessor</strong>, по нему тоже
+            жмакаем.</span
+          ><br />
+          <img src="pictures/img9.png" alt="image" /><br />
+          <span
+            >10. Теперь в <strong>Preprocessor Definitions</strong> жмем
+            изменить, как показано на картинке:</span
+          ><br />
+          <img src="pictures/img10.png" alt="image" /><br />
+          <span
+            >11. Вставляем туда
+            <b
+              style="
+                background-color: black;
+                color: grey;
+                font-family: monospace;
+                font-size: large;
+              "
+              >_CRT_SECURE_NO_WARNINGS</b
+            >
+            . Применяем все и кайфуем.</span
+          ><br />
+          <img src="pictures/img11.png" alt="image" /><br /><br />
+          <span
+            >Что ж, поздравляю, ты настроил проект и можешь начинать прогать на
+            сишке, используя функции scanf, printf и другие функции для работы с
+            файлами.</span
+          >
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
