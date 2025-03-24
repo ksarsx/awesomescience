@@ -19,7 +19,8 @@
             которой хранятся какие-то данные. Этими данными может быть число,
             символ или указатель. Под каждый тип данных существует свой тип
             переменной (контейнера).</span
-          >
+          ><br/>
+          <span style="font-size: smaller;color:rgb(150, 150, 150)">В этой статье будет использован scanf для вывода результата программ, его объяснение будет в следующей статье <a href="https://google.com">функции printf и scanf</a>.</span>
         </div>
         <br />
         <h3>Типы данных</h3>
@@ -60,8 +61,36 @@ C:\Project21\x64\Debug\Project21.exe (процесс 6088) завершил ра
           </div>
           <br/><br/>
           <h4 style="font-family: monospace;">float</h4>
-          <span>Это вещественный тип данных (с плавающей запятой). Занимает столько же памяти как и int - 4 байта. Подходит для работы с дробными числами и иррациональными.</span>
+          <span>Это вещественный тип данных (с плавающей запятой). Занимает столько же памяти как и int - 4 байта. Подходит для работы с дробными и иррациональными числами.</span>
           <br/><br/>
+          <div class="code-head">
+            С
+            <pre><code class="c-lang">#include &ltstdio.h>
+int main() {
+  char c1 = 'a';
+  char c2 = 'w';
+  char c3 = 'e';
+  char c4 = 's';
+  char c5 = 'o';
+  char c6 = 'm';
+  char c7 = 'e';
+  char c8 = 's';
+  char c9 = 'c';
+  char c10 = 'i';
+  char c11 = 'e';
+  char c12 = 'n';
+  char c13 = 'c';
+  char c14 = 'e';
+
+  printf("%c%c%c%c%c%c%c%c%c%c%c%c%c%c", c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14);
+}</code></pre>
+          </div>
+          <br/>
+          <div class="code-head">
+            Вывод
+            <pre><code class="c-lang">awesomescience
+C:\Project21\x64\Debug\Project21.exe (процесс 23352) завершил работу с кодом 0 (0x0).</code></pre>
+          </div><br/>
           <div class="code-head">
             С
             <pre><code class="c-lang">#include &ltstdio.h>
@@ -72,6 +101,72 @@ int main() {
   printf("%f", a + b);
   return 0;
 }</code></pre>
+          </div><br/>
+          <div class="code-head">
+            Вывод
+            <pre><code class="c-lang">5.000000
+C:\Project21\x64\Debug\Project21.exe (процесс 15232) завершил работу с кодом 0 (0x0).</code></pre>
+          </div> <br/><br/>
+          <h4 style="font-family: monospace;">double</h4>
+          <span>Это тоже вещественный тип данных (с плавающей запятой). Но занимает уже 8 байт памяти. Отличиается от float только тем, что под него выделяется больше памяти.</span>
+          <br/><br/>
+          <h4 style="font-family: monospace;">char</h4>
+          <span>Тип данных, который позволяет хранить один символ. Занимает 1 байт.</span><br/><br/>
+          <div class="code-head">
+            С
+            <pre><code class="c-lang">#include &ltstdio.h>
+int main() {
+  char c1 = 'a';
+  char c2 = 'w';
+  char c3 = 'e';
+  char c4 = 's';
+  char c5 = 'o';
+  char c6 = 'm';
+  char c7 = 'e';
+  char c8 = 's';
+  char c9 = 'c';
+  char c10 = 'i';
+  char c11 = 'e';
+  char c12 = 'n';
+  char c13 = 'c';
+  char c14 = 'e';
+
+  printf("%c%c%c%c%c%c%c%c%c%c%c%c%c%c", c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14);
+}</code></pre>
+          </div>
+          <br/>
+          <div class="code-head">
+            Вывод
+            <pre><code class="c-lang">awesomescience
+C:\Project21\x64\Debug\Project21.exe (процесс 23352) завершил работу с кодом 0 (0x0).</code></pre>
+          </div><br/>          
+          <div class="code-head">
+            С
+            <pre><code class="c-lang">#include &ltstdio.h>
+int main() {
+  char c = '0';
+  printf("%d", c); //выводим в интовом виде
+}</code></pre>
+          </div>
+          <br/>
+          <div class="code-head">
+            Вывод
+            <pre><code class="c-lang">48
+C:\Project21\x64\Debug\Project21.exe (процесс 6656) завершил работу с кодом 0 (0x0).</code></pre>
+          </div><br/>
+          <div class="code-head">
+            С
+            <pre><code class="c-lang">#include <stdio.h>
+int main() {
+  int number = '9' - '0'; // здесь вычитаются номера символов и мы получаем в результате разницу между ними
+  printf("%d", number);
+}</code></pre>
+          </div>
+          <br/>
+          <div class="code-head">
+            Вывод
+            <pre><code class="c-lang">9
+C:\Project21\x64\Debug\Project21.exe (процесс 15304) завершил работу с кодом 0 (0x0).</code></pre>
           </div>
         </div>
       </article>
