@@ -23,6 +23,57 @@
         </div>
         <br />
         <h3>Типы данных</h3>
+        <div>
+          <h4 style="font-family: monospace;">int</h4>
+          <span>Это целочисленный тип данных, то есть в переменную этого типа можно положить целове число. Переменные этого типа занимают 4 байта памяти (имеют размах от -32768 до 32767). Вот пример создания переменной типа <strong>int</strong>:</span>
+          <br/><br/>
+          <div class="code-head">
+            C
+            <pre><code class="c-lang">#include &ltstdio.h>
+
+int main() {
+    /*присваиваем в перменную с названием number 
+    целочисленное значение равное 10*/
+    int number = 10;                        
+    return 0;
+}</code></pre>
+          </div>
+          <br/><br/>
+          <span>Мы можем складывать значения переменных, умножать, делить, брать остаток от деления и проводить другие арифметические операции со значениями переменных, а потом присваивать результаты этих операций в сами переменные:</span><br/><br/>
+          <div class="code-head">
+            C
+            <pre><code class="c-lang">#include &ltstdio.h>
+
+int main() {
+    int a = 10;
+    int b = 12;
+    int c = a + b;
+    printf("%d", c);                        
+    return 0;
+}</code></pre>
+          </div>
+          <br/>
+          <div class="code-head">
+            Вывод
+            <pre><code class="c-lang">22
+C:\Project21\x64\Debug\Project21.exe (процесс 6088) завершил работу с кодом 0 (0x0).</code></pre>
+          </div>
+          <br/><br/>
+          <h4 style="font-family: monospace;">float</h4>
+          <span>Это вещественный тип данных (с плавающей запятой). Занимает столько же памяти как и int - 4 байта. Подходит для работы с дробными числами и иррациональными.</span>
+          <br/><br/>
+          <div class="code-head">
+            С
+            <pre><code class="c-lang">#include &ltstdio.h>
+              
+int main() {
+  float a = 2.5;
+  float b = a;
+  printf("%f", a + b);
+  return 0;
+}</code></pre>
+          </div>
+        </div>
       </article>
     </main>
   </body>

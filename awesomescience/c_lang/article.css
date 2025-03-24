@@ -1,7 +1,7 @@
 .code-head {
   color: rgb(255, 255, 255);
   background-color: rgb(81, 81, 81);
-  width: 100;
+  
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -10,6 +10,8 @@
   font-family: monospace;
   font-size: 18px;
   color: rgb(55, 255, 0);
+
+  
 }
 
 .code-detail {
@@ -57,6 +59,7 @@ article div {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
+  min-width: 550px;
 }
 
 article div h4 {
@@ -84,4 +87,5 @@ pre {
   margin-bottom: 0%;
   padding-top: 2px;
   padding-bottom: 4px;
+  overflow-x: auto;
 }
