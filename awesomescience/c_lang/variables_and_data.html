@@ -66,34 +66,6 @@ C:\Project21\x64\Debug\Project21.exe (процесс 6088) завершил ра
           <div class="code-head">
             С
             <pre><code class="c-lang">#include &ltstdio.h>
-int main() {
-  char c1 = 'a';
-  char c2 = 'w';
-  char c3 = 'e';
-  char c4 = 's';
-  char c5 = 'o';
-  char c6 = 'm';
-  char c7 = 'e';
-  char c8 = 's';
-  char c9 = 'c';
-  char c10 = 'i';
-  char c11 = 'e';
-  char c12 = 'n';
-  char c13 = 'c';
-  char c14 = 'e';
-
-  printf("%c%c%c%c%c%c%c%c%c%c%c%c%c%c", c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14);
-}</code></pre>
-          </div>
-          <br/>
-          <div class="code-head">
-            Вывод
-            <pre><code class="c-lang">awesomescience
-C:\Project21\x64\Debug\Project21.exe (процесс 23352) завершил работу с кодом 0 (0x0).</code></pre>
-          </div><br/>
-          <div class="code-head">
-            С
-            <pre><code class="c-lang">#include &ltstdio.h>
               
 int main() {
   float a = 2.5;
@@ -112,7 +84,25 @@ C:\Project21\x64\Debug\Project21.exe (процесс 15232) завершил р�
           <br/><br/>
           <h4 style="font-family: monospace;">char</h4>
           <span>Тип данных, который позволяет хранить один символ. Занимает 1 байт.</span><br/><br/>
+          
+          <span>Здесь просто выводим один символ</span>
+          <div class="code-head" style="margin-top: 5px;">
+            С
+            <pre><code class="c-lang">#include &ltstdio.h>
+int main() {
+  char sym = 'A';
+  printf("%c", sym);
+  return 0;
+}</code></pre>
+          </div><br/>
           <div class="code-head">
+            Вывод
+            <pre><code class="c-lang">A
+              C:\Project30\x64\Debug\Project30.exe (process 24840) exited with code 0.</code></pre>
+          </div><br/><br/>
+          
+          <span>Тут играемся с выводом символов</span>
+          <div class="code-head" style="margin-top: 5px;">
             С
             <pre><code class="c-lang">#include &ltstdio.h>
 int main() {
@@ -139,8 +129,9 @@ int main() {
             Вывод
             <pre><code class="c-lang">awesomescience
 C:\Project21\x64\Debug\Project21.exe (процесс 23352) завершил работу с кодом 0 (0x0).</code></pre>
-          </div><br/>          
-          <div class="code-head">
+          </div><br/>
+          <span>Символы в си хранятся как коды в таблице аски, поэтому при переводе в целочисленный вид мы получаем коды символов.</span>          
+          <div class="code-head" style="margin-top: 5px;">
             С
             <pre><code class="c-lang">#include &ltstdio.h>
 int main() {
@@ -149,7 +140,8 @@ int main() {
 }</code></pre>
           </div>
           <br/>
-          <div class="code-head">
+          
+          <div class="code-head" >
             Вывод
             <pre><code class="c-lang">48
 C:\Project21\x64\Debug\Project21.exe (процесс 6656) завершил работу с кодом 0 (0x0).</code></pre>
