@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="article.css">
+        <title>Coments C</title>
+    </head>
+    <body>
+        <header>
+            <span class="subtitle">Awesome Science</span>
+            <h1 class="theme">Комментарии в Си</h1>
+        </header>
+        <main>
+            <article>
+                <br/>
+                <div>
+                    <span>Как и вдругих языках программирования в языке Си можно и нужно писать комментарии. Они помогают легче ориентироваться в коде. Допустим вы открываете проект спустя неделю, скорее всего вы забудите логику многих функций, которые вы используете, в этом случае коментарии помогают быстро разобраться в коде, это также полезно для чтения кода другими программистами, если ты работаешь над проектом в команде.</span>
+                </div>
+                <br/>
+                <div>
+                    <h4>Однострочные комментарии</h4>
+                    <span>Однострочные комментарии могут находиться в любой части кода, записываются при помощи двух слешей: <strong>//</strong>.</span>
+                <br/>
+                          
+                <div class="code-head" style="margin-top: 5px;">
+                  С
+                  <pre><code class="c-lang">#include &ltstdio.h>
+int main() {
+// однострочный комментарий
+return 0;        
+}</code></pre>
+                </div>
+                </div>
+                <br/>
+                <div>
+                    <h4>Многострочные комментарии</h4>
+                    <span>Многострочные комментарии также как и однстрочные, можно писать где угодно. Они записываются при помощи открывающей комментарий <strong style="font-family: monospace;">/*</strong> и закрывающей <strong style="font-family: monospace;">*/</strong>, текст, находящийся между <strong style="font-family: monospace;">/*</strong> и <strong style="font-family: monospace;">*/</strong> считается комментарием и не читается компилятором.</span>
+                
+                    <div class="code-head" style="margin-top: 5px;">
+                        С
+                        <pre><code class="c-lang">#include &ltstdio.h>
+
+/*
+Многострочный 
+комментарий
+*/
+
+int main() {
+    return 0;
+}
+                        </code></pre>
+                      </div>
+                </div>
+            
+            </article>
+        </main>
+
+    </body>
+</html>
