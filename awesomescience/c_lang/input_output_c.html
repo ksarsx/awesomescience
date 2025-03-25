@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ввод и вывод в Си</title>
+        <link rel="stylesheet" href="article.css">
+    </head>
+    <body>
+        <header>
+            <span class="subtitle">Awesome Science</span>
+            <h1 class="theme">printf и scanf</h1>
+        </header>
+        <main>
+            <article>
+                <br/>
+                <div>
+                    <h4>Функция printf</h4>
+                    <span>Функция printf предназначена для вывода (в основном в консоль) отформатированного текста. Первый параметр, который она принимает - это строка формата, в ней может содержаться как просто текст, так и специальные шаблоны - типы аргументов, которые идут после первого аргумента (форматной строки). В местах, где подставлены эти шаблоны как раз и будут выведены значения аргументов после форматной строки. <br/> <br/><strong style="font-size: 18px;">Шаблоны:</strong> <ul style="margin: 0%;">
+                        <li>%d - для вывода целочисленных значений</li>
+                        <li>%f - для вещественных значений</li>
+                        <li>%с - для вывода символа</li>
+                        <li>%p - для вывода адресов</li>
+                    </ul> </span> <br/>
+
+                    <div class="code-head" style="margin-top: 5px;">
+                        С
+                        <pre><code class="c-lang">#include &ltstdio.h>
+
+int main() {
+    printf("%d", 10);
+    return 0;
+}</code></pre>
+                      </div><br/>
+                      <div class="code-head" style="margin-top: 5px;">
+                        Вывод
+                        <pre><code class="c-lang">10</code></pre>
+                      </div>
+                </div> <br/>
+                <div>
+                    <h4>Функция scanf</h4>
+                    <span>Функция scanf является обратной функцией к функции printf, делает тоже самое, только наоборот. Тоесть считывает значения из консоли. Шаблоны у нее те же. Аргументы, которые идут после шаблонной строки, должны быть переменными, перед ними мы пишем & - это оператор взятия адреса, в которые будут переданы значения с консоли.<br/><br/> Далее пример программы, которая считывает значения 2 значения и выводит их сумму.</span>
+                    
+                    <div class="code-head" style="margin-top: 5px;">
+                        С
+                        <pre><code class="c-lang">#include <stdio.h>
+
+int main() {
+    int a;
+    int b;
+
+    scanf("%d %d", &a, &b);
+
+    int sum = a + b;
+
+    printf("%d", sum);
+
+    return 0;
+}</code></pre>
+                      </div>
+                      <br/>
+                      <div class="code-head" style="margin-top: 5px;">
+                        ввод
+                        <pre><code class="c-lang">35 60</code></pre>
+                      </div><br/>
+                      <div class="code-head" style="margin-top: 5px;">
+                        вывод
+                        <pre><code class="c-lang">95</code></pre>
+                      </div>
+                </div>
+
+
+            </article>
+        </main>
+    </body>
+</html>
