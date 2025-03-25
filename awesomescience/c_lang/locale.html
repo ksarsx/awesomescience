@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Locale</title>
+        <link rel="stylesheet" href="article.css">
+    </head>
+    <body>
+        <header>
+            <span class="subtitle">Awesome Science</span>
+            <h1 class="theme">Локализация</h1>
+        </header>
+        <main>
+            <article><br/>
+                <div>
+                    <span>Локализация в нашем случае нужна для корректного вывода в консоль. То есть без неё символы на русском языке например будут выглядеть как непонятные крокозябры.</span>
+
+                    <div class="code-head" style="margin-top: 10px;">
+                        C
+                        <pre><code class="c-lang">#include &ltstdio.h>
+
+int main() {
+    printf("Привет, Мир!");
+    return 0;
+}       
+</code></pre>
+                      </div>
+
+                      <div class="code-head" style="margin-top: 10px;">Вывод
+                        <pre><code class="c-lang">╧ЁштхЄ, ╠шЁ!</code></pre>
+                      </div>
+                    <br/>
+                      <span>Чтобы поправить данную ситуацию импортируем <strong>locale.h</strong> и пользуемся функцией setlocale:</span>
+                      <div class="code-head" style="margin-top: 10px;">
+                        C
+                        <pre><code class="c-lang">#include &ltstdio.h>
+#include &ltlocale.h>
+
+int main() {
+    setlocale(LC_ALL, "ru");
+    printf("Привет, Мир!");
+    return 0;
+}    
+</code></pre>
+                      </div>
+                      <br/>
+                      <div class="code-head" style="margin-top: 10px;">
+                        Вывод
+                        <pre><code class="c-lang">Привет, Мир!    
+</code></pre>
+                      </div>
+
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
