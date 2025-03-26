@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Conditional statements</title>
-    <link rel="stylesheet" href="article.css">
-</head>
+    <link rel="stylesheet" href="article.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <span class="subtitle">Awesome Science</span>
-        <h1 class="theme">Условные конструкции</h1>
+      <span class="subtitle">Awesome Science</span>
+      <h1 class="theme">Условные конструкции</h1>
     </header>
     <body>
-        <main>
-            <article>
-                <br/>
-                <div>
-                    <h4>if</h4>
-                    <span>if или "если" - это условная конструкция, которая выполняет код внутри своего тела, если парметр, который она принимает имеет истинностное значение.</span>
-                    
-                    <div class="code-head" style="margin-top: 10px;">
-                        <pre><code class="c-lang">#include &ltstdio.h>
+      <main>
+        <article>
+          <br />
+          <div>
+            <h4>if</h4>
+            <span
+              >if или "если" - это условная конструкция, которая выполняет код
+              внутри своего тела, если парметр, который она принимает имеет
+              истинностное значение.</span
+            >
+
+            <div class="code-head" style="margin-top: 10px">
+              <pre><code class="c-lang">#include &ltstdio.h>
 if (условие) {
     код, который выполняется при соблюдении условия
 }            
 </code></pre>
-                      </div>
-                <br/>
-                <span>Вот примитивный пример робаты if:</span>
-                <div class="code-head" style="margin-top: 10px;">
-                    C
-                    <pre><code class="c-lang">#include &ltstdio.h>
+            </div>
+            <br />
+            <span>Вот примитивный пример робаты if:</span>
+            <div class="code-head" style="margin-top: 10px">
+              C
+              <pre><code class="c-lang">#include &ltstdio.h>
 #include &ltlocale.h>
 
 int main() {
@@ -43,18 +47,28 @@ int main() {
     return 0;
 }
 </code></pre>
-                  </div>
+            </div>
 
-                  <br/>
-                  <div class="code-head" style="margin-top: 10px;">
-                    Вывод
-                    <pre><code class="c-lang">Один больше нуля     
+            <br />
+            <div class="code-head" style="margin-top: 10px">
+              Вывод
+              <pre><code class="c-lang">Один больше нуля     
 </code></pre>
-                  </div>
-                  
-                </div>
-            </article>
-        </main>
+            </div>
+          </div>
+          <br />
+          <div>
+            <h4>else if</h4>
+            <span
+              >else if или "иначе если" - обычно стоит после if или else if,
+              важно заметить, что если перед ним стоящий if или else if
+              выполнится, то до него дело не дойдет. Это тоже условная
+              конструкция, которая выполняет код внутри своего тела, в случе
+              если парметр имеет истинное значение.</span
+            >
+          </div>
+        </article>
+      </main>
     </body>
-</body>
+  </body>
 </html>
