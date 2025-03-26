@@ -66,7 +66,57 @@ int main() {
               конструкция, которая выполняет код внутри своего тела, в случе
               если парметр имеет истинное значение.</span
             >
+            <div class="code-head" style="margin-top: 10px">C
+              <pre><code class="c-lang">#include &ltstdio.h>
+#include &ltlocale.h>
+
+int main() {
+  setlocale(LC_ALL, "ru");
+  
+  if (1 > 2) {
+    printf("Ложь");
+  }
+  else if (2 > 1) {
+    printf("Правда");
+  }
+  
+  return 0;
+}
+</code></pre>
+            </div>
+            <div class="code-head" style="margin-top: 10px">Вывод
+              <pre><code class="c-lang">Правда     
+</code></pre>
+            </div>
+          </div><br/>
+          <div>
+            <h4>else</h4>
+            <span>else или иначе - условная конструкция, которая следует после if или else if и выполняется в случае, если ничто до него не вполнилось.</span>
+          
+            <div class="code-head" style="margin-top: 10px">C
+              <pre><code class="c-lang">#include &ltstdio.h>
+#include &ltlocale.h>
+
+int main() {
+  setlocale(LC_ALL, "ru");
+  
+  if (1 > 2) {
+    printf("Ложь");
+  }
+  else if (1 == 2) {
+    printf("Ложь");
+  }
+  else {
+    printf("Все предыдущие условия - ложные");
+  }
+  
+  return 0;
+}
+</code></pre>
+            </div>
+          
           </div>
+
         </article>
       </main>
     </body>
