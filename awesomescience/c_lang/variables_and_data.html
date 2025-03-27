@@ -159,7 +159,23 @@ int main() {
             Вывод
             <pre><code class="c-lang">9
 C:\Project21\x64\Debug\Project21.exe (процесс 15304) завершил работу с кодом 0 (0x0).</code></pre>
-          </div>
+          </div><br/>
+          <span>Стоит отметить, что в Си есть спецсимволы, напрмер перенос строки.</span>
+          <div class="code-head" style="margin-top:10px;">
+            C
+            <pre><code class="c-lang">#include &ltstdio.h>
+
+int main() {
+  printf("text\ntext in new line");
+  return 0;
+}</code></pre></div>
+<br/>
+<div class="code-head">
+  Вывод
+  <pre><code class="c-lang">text
+text in new line</code></pre>
+</div>
+
         </div>
       </article>
     </main>

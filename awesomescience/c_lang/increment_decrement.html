@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>increment & decrement</title>
+        <link rel="stylesheet" href="article.css">
+    </head>
+    <body>
+        <header>
+            <span class="subtitle">Awesome Science</span>
+            <h1 class="theme">Инкременты и декременты</h1>
+        </header>
+        <main>
+            <article>
+                <div>
+                    <h4>Инкремент</h4>
+                    <span>Это оператор, который увеличивает значение переменной на 1. Пишется как <strong style="font-family: monospace;">++</strong> после в постфиксной форме и перед в префиксной.</span>
+                    <div class="code-head" style="margin-top:10px;">
+                        C
+                        <pre><code class="c-lang">#include &ltstdio.h>
+
+int main() {
+    int n = 0;
+    n++;
+    printf("%d", n);
+}</code></pre></div>
+                
+<div class="code-head" style="margin-top:10px;">
+    Вывод
+    <pre><code class="c-lang">1</code></pre></div>
+                <br/>
+                <span>Префиксный инкремент сначал меняет значение, а потом возвращает его. Вот так:</span>
+                <div class="code-head" style="margin-top:10px;">
+                    C
+                    <pre><code class="c-lang">#include &ltstdio.h>
+
+int main() {
+    int x = 0;
+    int y = ++x;
+    printf("%d", y);
+}</code></pre></div>
+            
+            <div class="code-head" style="margin-top:10px;">
+                Вывод
+                <pre><code class="c-lang">1</code></pre></div>
+                <br/>
+                <span>Постфиксный инкремент сначала возвращает значение, а потом меняет его.</span>
+                <div class="code-head" style="margin-top:10px;">
+                    C
+                    <pre><code class="c-lang">#include &ltstdio.h>
+
+int main() {
+    int x = 0;
+    int y = x++;
+    printf("%d", y);
+}</code></pre></div>
+
+<div class="code-head" style="margin-top:10px;">
+    Вывод
+    <pre><code class="c-lang">0</code></pre></div>
+                <br/>
+                <h4>Декремент</h4>
+                <span>Декремент вместо прибавления единички вычитает её. Записывается с помощью <strong style="font-family: monospace;">--</strong>. А так в префиксной и постфиксной форме работает также.</span>
+                
+                <div class="code-head" style="margin-top:10px;">
+                    C
+                    <pre><code class="c-lang">#include <stdio.h>
+
+int main() {
+    int n = 0;
+    n--;
+    printf("%d", n);
+}</code></pre></div>
+
+<div class="code-head" style="margin-top:10px;">
+    Вывод
+    <pre><code class="c-lang">-1</code></pre></div>
+            
+            </div>
+            </article>
+        </main>
+    </body>
+</html>
