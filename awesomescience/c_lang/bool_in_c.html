@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Логическая тема</title>
+        <link rel="stylesheet" href="article.css">
+    </head>
+    <body>
+        <header>
+            <span class="subtitle">Awesome Science</span>
+            <h1 class="theme">Логические значения и условные операторы<h1>
+        </header>
+        <main>
+            <article>
+                <div>
+                    <span>Как такового логического типа данных bool в языке Си нет. Однако его логику реализуют с помощью 1 или 0. Также следует учитывать, что правдой считается любое значение не равное нулю. Для получения логических значений используем условные операторы, они используются для сравнения значений, в случае, если сравнение верно, то они возращают правду, иначе ложь.
+                
+                    <br/><br/>Условные бинарные операторы:
+                    <ul>
+                        <li><strong style="font-family: monospace;">==</strong> - возвращает правду, когда оба сравниваемые значения совпадают.</li>
+                        <li><strong style="font-family: monospace;">!=</strong> - возвращает правду, когда оба сравниваемые значения не совпадают.</li>
+                        <li><strong style="font-family: monospace;">></strong> - возвращает правду, когда значение слева больше чем значение справа.</li>
+                        <li><strong style="font-family: monospace;">&lt</strong> - возращает правду, когда значение слева меньше чем значение справа.</li>
+                        <li><strong style="font-family: monospace;">>=</strong> - возвращает правду, когда левое значение больше либо равно правому.</li>
+                        <li><strong style="font-family: monospace;">&lt=</strong> - возращает правду, когда левое значение меньше либо равно правому.</li>
+                    </ul>
+                    И условный унарный оператор <strong style="font-family: monospace;">!</strong> инвертирует значение, то есть из правды в ложь, из лжи в правду.
+                    </span>
+                    <div class="code-head" style="margin-top: 10px">C
+                        <pre><code class="c-lang">#include &ltstdio.h>
+
+int main() {
+    int a = 1 > 0;
+    printf("%d", a);
+    return 0;
+}</code></pre>
+                      </div>
+
+                      <div class="code-head" style="margin-top: 10px">Вывод
+                        <pre><code class="c-lang">1</code></pre>
+                      </div><br/>
+                      <div class="code-head" style="margin-top: 10px">С
+                        <pre><code class="c-lang">#include <stdio.h>
+
+int main() {
+    int a = !46;
+    printf("%d", a);
+    return 0;
+}</code></pre>
+                      </div>
+                      <div class="code-head" style="margin-top: 10px">Вывод
+                        <pre><code class="c-lang">#include <stdio.h>0</code></pre>
+                      </div>
+                </div>
+            </article>
+        </main>
+        
+    </body>
+</html>
