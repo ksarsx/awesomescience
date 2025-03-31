@@ -1,6 +1,10 @@
 body {
   margin: 0%;
   background-color: #1a1a1a;
+
+  min-height: 100vh; /* Body на всю высоту экрана */
+  display: flex; /* Flexbox, чтобы раздать роли */
+  flex-direction: column; /* Всё вертикально */
 }
 
 header {
@@ -19,6 +23,8 @@ header h1 {
 main {
   display: grid;
   grid-template-columns: 0% 100% 0%;
+
+  flex: 1 0 auto; /* Main забирает всё свободное место */
 }
 
 main article {
@@ -87,4 +93,12 @@ ul li a {
 
 ul li a:hover {
   color: blue;
+}
+
+footer {
+  color: blueviolet;
+  background-color: #111111;
+  width: 100%;
+  text-align: end;
+  flex-shrink: 0;
 }
