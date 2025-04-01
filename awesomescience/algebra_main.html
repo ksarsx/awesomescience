@@ -2,22 +2,85 @@
 <html>
   <head>
     <style>
-      body {
-        background-color: rgb(55, 55, 55);
-        color: rgb(0, 0, 0);
+      /* для мобилы*/
+      @media (max-width: 1000px) {
+        body {
+          background-color: rgb(255, 0, 0);
+          color: rgb(0, 0, 0);
+        }
+        main {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1000px) minmax(0, 1fr);
+          background-color: rgb(119, 119, 119);
+          color: aliceblue;
+        }
+
+        main article {
+          grid-column: 2;
+          color: black;
+          background-color: blanchedalmond;
+
+          font-size: 20px;
+        }
       }
-      main {
-        background-color: rgb(119, 119, 119);
-        width: 250px;
-        color: aliceblue;
+
+      /* для компа */
+      @media (min-width: 1000px) and (max-width: 1130px) {
+        body {
+          background-color: rgb(55, 55, 55);
+          color: rgb(0, 0, 0);
+        }
+        main {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) minmax(0, 700px) minmax(0, 1fr);
+          background-color: rgb(119, 119, 119);
+          color: aliceblue;
+        }
+
+        main article {
+          grid-column: 2;
+          color: black;
+          background-color: blanchedalmond;
+
+          font-size: 20px;
+        }
+      }
+      @media (min-width: 1131px) {
+        body {
+          background-color: rgb(55, 55, 55);
+          color: rgb(0, 0, 0);
+        }
+        main {
+          display: grid;
+          grid-template-columns: 13% 74% 13%;
+          background-color: rgb(119, 119, 119);
+          color: aliceblue;
+        }
+
+        main article {
+          grid-column: 2;
+          color: black;
+          background-color: blanchedalmond;
+
+          font-size: 20px;
+        }
       }
     </style>
   </head>
   <body>
     <main>
-      текст про что-то текст про что-то текст про что-то текст про что-то текст
-      про что-то текст про что-то текст про что-то текст про что-то текст про
-      что-то
+      <article>
+        <p>
+          JavaScript is a versatile, dynamically typed programming language used
+          for interactive web applications, supporting both client-side and
+          server-side development, and integrating seamlessly with HTML, CSS,
+          and a rich standard library. JavaScript is a single-threaded language
+          that executes one task at a time. It is an Interpreted language which
+          means it executes the code line by line. The data type of the variable
+          is decided at run-time in JavaScript that’s why it is called
+          dynamically typed.
+        </p>
+      </article>
     </main>
   </body>
 </html>
