@@ -16,6 +16,11 @@ h2 {
     text-align: center;
 }
 
+.main-link {
+  text-decoration: none;
+  color: white;
+}
+
 /*пиздатая фраза в начале страницы про суть сайта*/
 .intro {
     font-family: Georgia, 'Times New Roman', Times, serif;
