@@ -1,10 +1,12 @@
 body {
   background-color: rgb(0, 0, 0);
   color: white;
+  
 }
 
 header {
   text-align: center;
+  font-family: monospace;
 }
 
 h1 {
@@ -31,6 +33,7 @@ h2 {
 }
 .link_a:hover {
   color:purple;
+  cursor: url("cursors/pointer.cur"), default;
 }
 .tutor_link_ul {
   list-style-type: none;

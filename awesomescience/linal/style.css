@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    color:white;
+}
+header {
+    text-align: center;
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+span {
+    font-size: 20px;
+}
+
+.img-container {
+    text-align: center;
+    padding-top: 10px;
+}
+.img-container img {
+    width: 80%;
+    height: auto;
+}
