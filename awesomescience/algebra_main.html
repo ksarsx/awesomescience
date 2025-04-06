@@ -1,85 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
-    <style>
-      /* для мобилы*/
-      @media (max-width: 1000px) {
-        body {
-          background-color: rgb(255, 0, 0);
-          color: rgb(0, 0, 0);
-        }
-        main {
-          display: grid;
-          grid-template-columns: minmax(0, 1fr) minmax(0, 1000px) minmax(0, 1fr);
-          background-color: rgb(119, 119, 119);
-          color: aliceblue;
-        }
-
-        main article {
-          grid-column: 2;
-          color: black;
-          background-color: blanchedalmond;
-
-          font-size: 20px;
-        }
-      }
-
-      /* для компа */
-      @media (min-width: 1000px) and (max-width: 1130px) {
-        body {
-          background-color: rgb(55, 55, 55);
-          color: rgb(0, 0, 0);
-        }
-        main {
-          display: grid;
-          grid-template-columns: minmax(0, 1fr) minmax(0, 700px) minmax(0, 1fr);
-          background-color: rgb(119, 119, 119);
-          color: aliceblue;
-        }
-
-        main article {
-          grid-column: 2;
-          color: black;
-          background-color: blanchedalmond;
-
-          font-size: 20px;
-        }
-      }
-      @media (min-width: 1131px) {
-        body {
-          background-color: rgb(55, 55, 55);
-          color: rgb(0, 0, 0);
-        }
-        main {
-          display: grid;
-          grid-template-columns: 13% 74% 13%;
-          background-color: rgb(119, 119, 119);
-          color: aliceblue;
-        }
-
-        main article {
-          grid-column: 2;
-          color: black;
-          background-color: blanchedalmond;
-
-          font-size: 20px;
-        }
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Алгебра</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <header>
+      <a class="main-link" href="index.html"><h1>Awesome Science -> Алгебра</h1></a>
+    </header>
+
     <main>
       <article>
-        <p>
-          JavaScript is a versatile, dynamically typed programming language used
-          for interactive web applications, supporting both client-side and
-          server-side development, and integrating seamlessly with HTML, CSS,
-          and a rich standard library. JavaScript is a single-threaded language
-          that executes one task at a time. It is an Interpreted language which
-          means it executes the code line by line. The data type of the variable
-          is decided at run-time in JavaScript that’s why it is called
-          dynamically typed.
-        </p>
+        <hr/><h2>Темы 1</h2>
+        <div class="tutor_link">
+          <ul class="tutor_link_ul">
+            <li class="tutor_link_li"><a class="link_a" href="algebra/a1.html">Начальные понятия и обозначения из теории множеств и мат-логики</a></li>
+            
+          </ul>
+        </div>
       </article>
     </main>
   </body>
